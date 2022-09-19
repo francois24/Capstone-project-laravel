@@ -61,9 +61,15 @@
     <title>Rentcar</title>
 
        @viteReactRefresh
-        @vite(['resources/js/app.jsx', 'resources/css/Navbar.css'])
+        @vite(['resources/js/app.jsx', 'resources/css/Navbar.css','resources/css/ourbenefits.css','resources/css/Rentalworks.css','resources/css/Rentalfleets.css','resources/css/Latestnes.css','resources/css/Rentalserv.css','resources/css/Rentalfleets.css'])
     </head>
     <body>
         <div id="navb"></div>
+        <div id="ourb"></div>
+        <div id="rentalw"></div>
+        <div id="rentalf"></div>
+        <div id="rentalserv"></div>
+        <div id="review"></div>
+        <div id="latestn"></div>
     </body>
 </html>
