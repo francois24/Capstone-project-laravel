@@ -9,6 +9,13 @@ import Latestnews from './components/homepage/Latestnews';
 import RentalServ from './components/homepage/Rentalserv';
 import Reviews from './components/homepage/Reviews';
 import Carslick from './components/homepage/Carslick';
+import Banner from './components/homepage/Banner';
+
+
+if(document.getElementById('bann')){
+    ReactDOM.render(<Banner />, document.getElementById('bann'));
+}
+
 
 if(document.getElementById('carslick')){
     ReactDOM.render(<Carslick />, document.getElementById('carslick'));

@@ -80,12 +80,13 @@
     <title>Rentcar</title>
 
        @viteReactRefresh
-        @vite(['resources/js/app.jsx', 'resources/css/bannerbg.css'])
+        @vite(['resources/js/app.jsx'])
     </head>
     <body>
       
         <div id="navb"></div>
-        @yield('bannerpage')
+        {{-- @yield('bannerpage') --}}
+        <div id="bann"></div>
         <div id="ourb"></div>
         <div id="rentalw"></div>
         <div id="rentalf"></div>
