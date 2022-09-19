@@ -56,7 +56,7 @@ function Navbar() {
           </li>
 
           <li className='nav-item'>
-            <a href='/News/#'
+            <a href='/news'
               className='nav-links'
             >
               NEWS
@@ -64,7 +64,7 @@ function Navbar() {
           </li>
 
           <li className='nav-item'>
-            <a href='/Contact/#'
+            <a href='/contactus'
               className='nav-links'
             >
              CONTACT&#160;US

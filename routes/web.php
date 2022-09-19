@@ -17,8 +17,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/news', function () {
+    return view('news');
+});
 
+Route::get('/contactus', function () {
+    return view('contact');
+});
 
+Route::get('/newsford', function () {
+    return view('newspage/newsford');
+});
 
+Route::get('/newsdealer', function () {
+    return view('newspage/newsdealer');
+});
 
+Route::get('/newstoyota', function () {
+    return view('newspage/newstoyota');
+});
 
+Route::get('/newsporsche', function () {
+    return view('newspage/newsporsche');
+});

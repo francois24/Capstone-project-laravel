@@ -11,11 +11,40 @@ import Reviews from './components/homepage/Reviews';
 import Carslick from './components/homepage/Carslick';
 import Banner from './components/homepage/Banner';
 import Footer from './components/homepage/Footer';
+import Contact from './components/Contact';
+import News from './components/News'
+import Newsford from './components/news/Newsford';
+import Newsdealer from './components/news/Newsdealer';
+import Newstoyota from './components/news/Newstoyota';
+import Newsporsche from './components/news/Newsporsche';
+
+if(document.getElementById('newsporsche')){
+    ReactDOM.render(<Newsporsche />, document.getElementById('newsporsche'));
+}
+
+if(document.getElementById('newstoyota')){
+    ReactDOM.render(<Newstoyota />, document.getElementById('newstoyota'));
+}
+
+if(document.getElementById('newsdealer')){
+    ReactDOM.render(<Newsdealer />, document.getElementById('newsdealer'));
+}
+
+if(document.getElementById('newsford')){
+    ReactDOM.render(<Newsford />, document.getElementById('newsford'));
+}
+
+if(document.getElementById('newslist')){
+    ReactDOM.render(<News />, document.getElementById('newslist'));
+}
 
 if(document.getElementById('bann')){
     ReactDOM.render(<Banner />, document.getElementById('bann'));
 }
 
+if(document.getElementById('contact')){
+    ReactDOM.render(<Contact />, document.getElementById('contact'));
+}
 
 if(document.getElementById('carslick')){
     ReactDOM.render(<Carslick />, document.getElementById('carslick'));
