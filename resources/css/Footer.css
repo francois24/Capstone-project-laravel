@@ -1,0 +1,49 @@
+* {
+    font-family: sans-serif;
+    }
+    
+   */
+    .Footer1 .span1 {
+        color: #ffff;
+    }
+
+    .Footer1 img {
+        cursor: pointer;
+       
+    }
+    
+    .usefullink h6{
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-family: 'Nunito Sans',sans-serif;
+    }
+    .usefullink p{
+        color: rgb(233, 229, 229);
+        cursor: pointer;
+        font-weight: 500;
+        transition: 0.5 ease;
+    }
+    
+    .usefullink a{
+        color: rgb(233, 229, 229);
+        cursor: pointer;
+        font-weight: 500;
+    }
+    
+    .usefullink a:hover {
+        color: #bf0404;
+    }
+    
+    .usefullink p:hover {
+        color: #bf0404;
+    }
+
+
+    /* .Footer1 {
+        border: 1px solid white;
+    }
+    .usefullink {
+        border: 1px solid white;
+    } */
