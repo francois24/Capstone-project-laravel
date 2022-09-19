@@ -94,6 +94,7 @@
         <div id="rentalserv"></div>
         <div id="review"></div>
         <div id="latestn"></div>
+        <div id="footr"></div>
 
         <!-- MDB -->
         <script

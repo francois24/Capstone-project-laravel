@@ -10,7 +10,7 @@ import RentalServ from './components/homepage/Rentalserv';
 import Reviews from './components/homepage/Reviews';
 import Carslick from './components/homepage/Carslick';
 import Banner from './components/homepage/Banner';
-
+import Footer from './components/homepage/Footer';
 
 if(document.getElementById('bann')){
     ReactDOM.render(<Banner />, document.getElementById('bann'));
@@ -53,6 +53,13 @@ if(document.getElementById('review')){
 if(document.getElementById('latestn')){
     ReactDOM.render(<Latestnews />, document.getElementById('latestn'));
 }
+
+
+
+if(document.getElementById('footr')){
+    ReactDOM.render(<Footer />, document.getElementById('footr'));
+}
+
 
 
 
