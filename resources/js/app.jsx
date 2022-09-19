@@ -8,8 +8,11 @@ import Rentalfleets from './components/homepage/Rentalfleets';
 import Latestnews from './components/homepage/Latestnews';
 import RentalServ from './components/homepage/Rentalserv';
 import Reviews from './components/homepage/Reviews';
+import Carslick from './components/homepage/Carslick';
 
-
+if(document.getElementById('carslick')){
+    ReactDOM.render(<Carslick />, document.getElementById('carslick'));
+}
 
 if(document.getElementById('navb')){
     ReactDOM.render(<Navbar />, document.getElementById('navb'));

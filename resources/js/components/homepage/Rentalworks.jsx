@@ -1,5 +1,6 @@
 import React from 'react';
 import divBg from '../../../media/rentalworks.mp4';
+import '../../../css/Rentalworks.css'
 
 const Rentalworks = () => {
   return (

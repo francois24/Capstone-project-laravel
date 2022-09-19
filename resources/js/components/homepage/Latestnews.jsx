@@ -5,6 +5,7 @@ import LatestCard2 from './LatestCard2'
 import LatestCard3 from './LatestCard3'
 import LatestCard4 from './LatestCard4'
 import {Col, Row, Container} from 'react-bootstrap';
+import '../../../css/Latestnews.css'
 
 export default class SimpleSlider1 extends Component {
   render() {
