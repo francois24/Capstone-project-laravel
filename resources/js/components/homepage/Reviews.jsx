@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import ComplexGrid from "./ReviewSlider";
+import '../../../css/Rentalfleets.css'
 
 
 export default class Reviews extends Component {

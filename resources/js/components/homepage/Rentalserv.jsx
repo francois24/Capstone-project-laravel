@@ -1,4 +1,5 @@
 import {Container, Row, Col} from 'react-bootstrap';
+import '../../../css/Rentalserv.css';
 
 function RentalServ() {
     return (
