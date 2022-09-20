@@ -108,7 +108,7 @@
           @if (Route::has('login'))
           <li class="nav-item">
               @auth
-            <a href="{{ url('/dashboard') }}" class="nav-link" href="#">Dashboard</a>
+            <a href="{{ url('/dashboard') }}" class="nav-link " href="#">Dashboard</a>
               @else
               <button type="button" class="btn btn-danger me-3 mt-2 mb-2"><a class=" text-white"  href="{{ route('login') }}">Log in </a></button>
                  @if (Route::has('register'))
