@@ -12,17 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-
-
-
-
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -34,3 +23,32 @@ Route::middleware([
 });
 
 Route::get('redirects','App\Http\Controllers\HomeController@index');
+Route::get('/newsporsche', function () {
+    return view('newspage/newsporsche');
+});
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/contactus', function () {
+    return view('contact');
+});
+
+Route::get('/newsford', function () {
+    return view('newspage/newsford');
+});
+
+Route::get('/newsdealer', function () {
+    return view('newspage/newsdealer');
+});
+
+Route::get('/newstoyota', function () {
+    return view('newspage/newstoyota');
+});
+
