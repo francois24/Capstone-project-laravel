@@ -30,7 +30,7 @@ const Newslist = () => {
                                 <div className='newsdesc'>
                                     <CardContent>
                                         <Typography className='mt-2 mb-2' gutterBottom variant="h5" component="div">
-                                        <a className='newstitle' href='/Newsford'><h3>Ford supplier Flex-n-Gate opens $160 million plant in Detroit</h3></a>
+                                        <a className='newstitle' href='/newsford'><h3>Ford supplier Flex-n-Gate opens $160 million plant in Detroit</h3></a>
                                         </Typography>
                                         <div className='redline'>-</div>
                                         <Typography className='mt-3' variant="body2" color="text.secondary">
@@ -56,7 +56,7 @@ const Newslist = () => {
                                 <div className='newsdesc'>
                                     <CardContent>
                                         <Typography className='mt-2 mb-2' gutterBottom variant="h5" component="div">
-                                        <a className='newstitle' href='/Newsporsche'><h3>Porsche sees opportunity to broaden subcriptions</h3></a>
+                                        <a className='newstitle' href='/newsporsche'><h3>Porsche sees opportunity to broaden subcriptions</h3></a>
                                         </Typography>
                                         <div className='redline'>-</div>
                                         <Typography className='mt-3' variant="body2" color="text.secondary">
@@ -82,7 +82,7 @@ const Newslist = () => {
                                 <div className='newsdesc'>
                                     <CardContent>
                                         <Typography className='mt-2 mb-2' gutterBottom variant="h5" component="div">
-                                        <a className='newstitle' href='/Newstoyota'><h3>Toyota Car decline overshadows light-truck gain</h3></a>
+                                        <a className='newstitle' href='/newstoyota'><h3>Toyota Car decline overshadows light-truck gain</h3></a>
                                         </Typography>
                                         <div className='redline'>-</div>
                                         <Typography className='mt-3' variant="body2" color="text.secondary">
@@ -108,7 +108,7 @@ const Newslist = () => {
                                 <div className='newsdesc'>
                                     <CardContent>
                                         <Typography className='mt-2 mb-2' gutterBottom variant="h5" component="div">
-                                        <a className='newstitle' href='/Newsdealer'><h3>Dealer agency warns carmakers on ‘safest’ label after Tesla boast</h3></a>
+                                        <a className='newstitle' href='/newsdealer'><h3>Dealer agency warns carmakers on ‘safest’ label after Tesla boast</h3></a>
                                         </Typography>
                                         <div className='redline'>-</div>
                                         <Typography className='mt-3' variant="body2" color="text.secondary">
