@@ -1,5 +1,12 @@
 
-<!DOCTYPE html>
+<x-app-layout>
+    {{-- <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Dashboard') }}
+        </h2>
+    </x-slot> --}}
+
+    <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -84,42 +91,7 @@
         @vite(['resources/js/app.jsx'])
     </head>
     <body>
-      <div class="container-fluid text-bg-dark">
-        {{-- <div class="col-sm">
-          <ul class="nav justify-content-end">
-            @if (Route::has('login'))
-            <li class="nav-item">
-                @auth
-              <a href="{{ url('/dashboard') }}" class="nav-link" href="#">Dashboard</a>
-                @else
-            </li>
-            <li class="d-block nav-item">
-              <a class=" text-dark  nav-link"  href="{{ route('login') }}">Log in </a>
-            </li>
 
-                @if (Route::has('register'))
-                <a class=" text-dark nav-link"  href="{{ route('register') }}">Register </a>
-                @endif
-            @endauth
-        @endif
-          </ul>
-        </div> --}}
-        <div class="nav justify-content-end" >
-          @if (Route::has('login'))
-          <li class="nav-item">
-              @auth
-            <a href="{{ url('/dashboard') }}" class="nav-link" href="#">Dashboard</a>
-              @else
-              <button type="button" class="btn btn-danger me-3 mt-2 mb-2"><a class=" text-white"  href="{{ route('login') }}">Log in </a></button>
-                 @if (Route::has('register'))
-          {{-- <button type="button" class="btn btn-primary me-2 mt-2 mb-2" ><a class=" text-white"  href="{{ route('register') }}">Register </a></button> --}}
-          <button type="button" class="btn btn-danger me-3 mt-2 mb-2"><a class=" text-white"  href="{{ route('register') }}">Register </a></button>
-                @endif
-             @endauth
-             @endif
-      </div>
-
-    </div>
         <div id="navb"></div>
         {{-- @yield('bannerpage') --}}
         <div id="bann"></div>
@@ -139,3 +111,7 @@
         ></script>
     </body>
 </html>
+
+
+  
+</x-app-layout>
