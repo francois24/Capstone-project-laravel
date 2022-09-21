@@ -71,7 +71,7 @@ export default function Mitsubishilancer() {
             <h6>&#8369;&nbsp;1,000 / per day</h6>
           </div>
           <div>
-            <a href='/Mitsubishilancer1' className='fltrent'>RENT&#160;IT</a>
+            <a href='/mitsubishilancer' className='fltrent'>RENT&#160;IT</a>
           </div>
         </div>
       </CardActions>

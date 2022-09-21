@@ -56,6 +56,28 @@ Route::get('/newsporsche', function () {
     return view('newspage/newsporsche');
 });
 
+
+// CARS
 Route::get('/forestersubaru', function () {
     return view('listcars/forestersubaru');
+});
+
+Route::get('/miragerange', function () {
+    return view('listcars/miragerange');
+});
+
+Route::get('/mitsubishilancer', function () {
+    return view('listcars/mitsubishilancer');
+});
+
+Route::get('/pajerorange', function () {
+    return view('listcars/pajerorange');
+});
+
+Route::get('/subaruliberty', function () {
+    return view('listcars/subaruliberty');
+});
+
+Route::get('/xvrangesubaru', function () {
+    return view('listcars/xvrangesubaru');
 });
