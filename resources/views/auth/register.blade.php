@@ -8,7 +8,8 @@
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
-
+            <h1 class="text-center text-2xl text-zinc-50">Register </h1>
+                <br>
             <div>
                 <x-jet-label for="name" value="{{ __('Name') }}" />
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
@@ -47,7 +48,7 @@
             @endif
 
             <div class="flex items-center justify-end mt-4">
-                <a class=" text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
+                <a class=" text-sm text-zinc-50 hover:text-red-700" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
                 </a>
 

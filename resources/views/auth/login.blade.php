@@ -14,8 +14,11 @@
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
+                <h1 class="text-center text-2xl text-white">Login </h1>
+                <br>
 
             <div>
+                
                 <x-jet-label for="email" value="{{ __('Email') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
             </div>
@@ -28,13 +31,13 @@
             <div class="block mt-4">
                 <label for="remember_me" class="flex items-center">
                     <x-jet-checkbox id="remember_me" name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                    <span class="ml-2 text-sm text-zinc-50">{{ __('Remember me') }}</span>
                 </label>
             </div>
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
-                    <a class=" text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                    <a class=" text-sm text-zinc-50 hover:text-red-700" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
