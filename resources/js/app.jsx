@@ -14,9 +14,19 @@ import Footer from './components/homepage/Footer';
 import Contact from './components/Contact';
 import News from './components/News'
 import Newsford from './components/news/Newsford';
-import Newsdealer from './components/news/Newsdealer';
 import Newstoyota from './components/news/Newstoyota';
 import Newsporsche from './components/news/Newsporsche';
+import Newsdealer from './components/news/Newsdealer';
+import Autolistings from './components/Autolistings'
+import Forestertab from './components/autolistings/listingcars/Forestertab';
+
+if(document.getElementById('forestertab')){
+    ReactDOM.render(<Forestertab />, document.getElementById('forestertab'));
+}
+
+if(document.getElementById('autolist')){
+    ReactDOM.render(<Autolistings />, document.getElementById('autolist'));
+}
 
 if(document.getElementById('newsporsche')){
     ReactDOM.render(<Newsporsche />, document.getElementById('newsporsche'));

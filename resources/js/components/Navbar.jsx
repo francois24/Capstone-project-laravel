@@ -32,7 +32,7 @@ function Navbar() {
           </li>
           
           <li className='nav-item'>
-            <a href='/Autolistings/#'
+            <a href='/autolistings'
               className='nav-links'
             >
               AUTOLISTINGS

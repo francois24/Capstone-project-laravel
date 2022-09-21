@@ -1,9 +1,10 @@
 import React from 'react';
+import Autocar from './autolistings/Autocar';
 
 export default function Autolistings() {
   return (
- 
-  <div>Autolistings Page</div>
-  
+    <>
+    <Autocar/>
+    </>
   );
 }

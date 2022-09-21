@@ -23,13 +23,13 @@ Route::middleware([
 });
 
 Route::get('redirects','App\Http\Controllers\HomeController@index');
-Route::get('/newsporsche', function () {
-    return view('newspage/newsporsche');
-});
-
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/autolistings', function () {
+    return view('autolistings');
 });
 
 Route::get('/news', function () {
@@ -52,3 +52,10 @@ Route::get('/newstoyota', function () {
     return view('newspage/newstoyota');
 });
 
+Route::get('/newsporsche', function () {
+    return view('newspage/newsporsche');
+});
+
+Route::get('/forestersubaru', function () {
+    return view('listcars/forestersubaru');
+});
