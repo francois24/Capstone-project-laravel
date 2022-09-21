@@ -4,5 +4,6 @@
             {{ __('Dashboardasdasd') }}
         </h2>
     </x-slot> --}}
+    <h1>sdfsdf</h1>
     <h1>Dashboard admin</h1>
 </x-app-layout>
