@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 
 const Specifications = () => {
   return (
-    <div className='specsall'>
+    <div className='specsall' style={{padding: ''}}>
         <Table>
             <tr>
                 <td style={{fontWeight: 'bolder'}} colSpan={2}>MAKE:</td>

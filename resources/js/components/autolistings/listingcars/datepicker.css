@@ -1,0 +1,42 @@
+/* Override Mui themes on DatePicker */
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #bf0404 !important;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #bf0404 !important;
+}
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #bf0404 !important;
+}
+
+.Mui-selected {
+    will-change: background-color;
+    background-color: #bf0404 !important;
+}
+
+.MuiButton-text {
+    color: #bf0404 !important;
+}
+
+.dpickerbtn {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    border: solid 1px #999999;
+    font-size: 18px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+}
+
+.dpickerbtn:hover {
+    color: white;
+    background-color: #bf0404;
+    border-color: #bf0404;
+}

@@ -14,7 +14,7 @@ import './datepicker.css';
 
 
 
-export default function MaterialUIPickers() {
+export default function Miragedate() {
   const [pickUp, pickUpValue] = React.useState(dayjs(Date()));
   const [dropOff, dropOffValue] = React.useState(dayjs(Date()));
   const [maker, setMaker] = React.useState('');
@@ -60,7 +60,7 @@ export default function MaterialUIPickers() {
             <InputLabel id="Car Brand">Car Brand</InputLabel>
             <Select
                 label="Car Brand"
-                value={maker}
+                value='Mirage Range'
                 onChange={handleChange}
             >
 

@@ -19,6 +19,31 @@ import Newsporsche from './components/news/Newsporsche';
 import Newsdealer from './components/news/Newsdealer';
 import Autolistings from './components/Autolistings'
 import Forestertab from './components/autolistings/listingcars/Forestertab';
+import Miragerangetab from './components/autolistings/listingcars/Miragerangetab';
+import Mitsubishilancer1 from './components/autolistings/listingcars/Mitsubishilancertab';
+import Pajerorangetab from './components/autolistings/listingcars/Pajerorangetab';
+import Subarulibertytab from './components/autolistings/listingcars/Subarulibertytab';
+import Xvrangetab from './components/autolistings/listingcars/Xvrangetab';
+
+if(document.getElementById('xvrangetab')){
+    ReactDOM.render(<Xvrangetab />, document.getElementById('xvrangetab'));
+}
+
+if(document.getElementById('subaruliberty')){
+    ReactDOM.render(<Subarulibertytab />, document.getElementById('subaruliberty'));
+}
+
+if(document.getElementById('pajerorange')){
+    ReactDOM.render(<Pajerorangetab />, document.getElementById('pajerorange'));
+}
+
+if(document.getElementById('mitsubishilancer')){
+    ReactDOM.render(<Mitsubishilancer1 />, document.getElementById('mitsubishilancer'));
+}
+
+if(document.getElementById('miragerange')){
+    ReactDOM.render(<Miragerangetab />, document.getElementById('miragerange'));
+}
 
 if(document.getElementById('forestertab')){
     ReactDOM.render(<Forestertab />, document.getElementById('forestertab'));

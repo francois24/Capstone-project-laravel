@@ -1,11 +1,11 @@
-import React from 'react';
-import { Container, Row, Col} from 'react-bootstrap';
-import Descrptab from './Descrptab';
-import './descrptab.css';
+import React from 'react'
+import { Container, Row, Col} from 'react-bootstrap'
 import 'react-datepicker/dist/react-datepicker.css';
-import Foresterdate from './Foresterdate';
+import Descrptab from './Descrptab'
+import Mitsubishidate from './Mitsubishidate'
+import './descrptab.css'
 
-const Forestertab = () => {
+const Mitsubishilancer1 = () => {
   return (
     <div className='listingsallcars'>
         <div className='listcarbg'>
@@ -17,8 +17,8 @@ const Forestertab = () => {
         <Container>
             <Row>
                 <Col lg={9}>
-                    <div className='text-center mb-5'><h1 className='car2title'>Forester Subaru</h1></div>
-                    <div className='imglistings'><img src='https://autostar.templines.org/wp-content/uploads/2018/12/4494977815b9b41fc38001632250464_0_0.jpg' alt='' /></div>
+                    <div className='text-center mb-5'><h1 className='car2title'>Mitsubishi Lancer</h1></div>
+                    <div className='imglistings w-100'><img src="https://snipboard.io/ntODUr.jpg" alt='' /></div>
                     <div><Descrptab/></div>
                 </Col>
                 <Col lg={3}>
@@ -26,7 +26,7 @@ const Forestertab = () => {
                         <div className='rentperday'><h4>&#8369;&nbsp;1,000 / per day</h4></div>
                         <div className='rentncont'>
                             <div className='pckdate'>
-                                <Foresterdate />
+                                <Mitsubishidate />
                             </div>
                         </div>
                     </div>
@@ -38,4 +38,4 @@ const Forestertab = () => {
   )
 }
 
-export default Forestertab
+export default Mitsubishilancer1

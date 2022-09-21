@@ -91,11 +91,13 @@ button {
 
 .vehicdesc {
   margin-top: 2rem;
+  padding: 1rem;
 }
 
 /* Equipment Description start*/
 .equipdesc {
   margin-top: 2rem;
+  padding: 1rem;
 }
 
 .equipdesc table td {
@@ -127,6 +129,7 @@ button {
 .autolistrevs {
   display: flex;
   margin-top: 2rem;
+  padding: 1rem;
 }
 
 .revsimg img {
@@ -158,13 +161,14 @@ button {
 /* Rent Now */
 .rentperday {
   text-align: center;
-  background-color: #262626;
+  background-color: #bf0404;
   color: #fff;
   padding: 12px;
 }
 
 .rentperday h4 {
   margin: auto;
+  font-weight: 700;
 }
 
 .rentncont {
@@ -174,4 +178,24 @@ button {
 
 .pckdate {
   margin-top: 30px;
+  padding: 1rem;
+}
+
+.nav-tabs .nav-link.active {
+  color: #bf0404 !important;
+  border-color: #bf0404 !important;
+}
+
+.nav-link {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.rentsec2 {
+  background-color: #f3f3f3;
+}
+
+.car2title {
+  font-size: 29px;
+  font-weight: 700;
 }
