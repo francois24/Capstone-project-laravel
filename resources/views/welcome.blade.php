@@ -110,10 +110,10 @@
               @auth
             <a href="{{ url('/dashboard') }}" class="nav-link " href="#">Dashboard</a>
               @else
-              <button type="button" class="btn btn-danger me-3 mt-2 mb-2"><a class=" text-white"  href="{{ route('login') }}">Log in </a></button>
+              <button type="button" class="btn  me-3 mt-2 mb-2" style="background:#bf0404"><a class=" text-white"  href="{{ route('login') }}">Log in </a></button>
                  @if (Route::has('register'))
           {{-- <button type="button" class="btn btn-primary me-2 mt-2 mb-2" ><a class=" text-white"  href="{{ route('register') }}">Register </a></button> --}}
-          <button type="button" class="btn btn-danger me-3 mt-2 mb-2"><a class=" text-white"  href="{{ route('register') }}">Register </a></button>
+          <button type="button" class="btn me-3 mt-2 mb-2"  style="background:#bf0404"><a class=" text-white"  href="{{ route('register') }}">Register </a></button>
                 @endif
              @endauth
              @endif
