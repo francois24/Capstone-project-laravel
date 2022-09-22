@@ -71,6 +71,7 @@ function RentalServ() {
                     </div>
                 </div>
             </div>
+            <div id='testimonials'></div>
         </div>
     );
   }
