@@ -1,5 +1,5 @@
 
-<x-app-layout>
+
     {{-- <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
@@ -91,7 +91,7 @@
         @vite(['resources/js/app.jsx'])
     </head>
     <body>
-
+      <x-app-layout>
         <div id="navb"></div>
         {{-- @yield('bannerpage') --}}
         <div id="bann"></div>
@@ -110,8 +110,8 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
         ></script>
     </body>
+  </x-app-layout>
 </html>
 
 
   
-</x-app-layout>

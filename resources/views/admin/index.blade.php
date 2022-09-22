@@ -29,6 +29,9 @@
                                 <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                     Role
                                 </th>
+                                <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Date Created
+                                </th>
                                 <th scope="col" width="200" class="px-6 py-3 bg-gray-50">
                                     Action
                                 </th>
@@ -48,9 +51,13 @@
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                         {{ $users->email }}
                                     </td>
-
+                            
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                         {{ $users->role }}
+                                    </td>
+
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        {{ $users->created_at }}
                                     </td>
 
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
