@@ -9,7 +9,7 @@ class HomeController extends Controller
     public function index(){
         $role = Auth::user()->role;
 
-        if($role=='admin'){
+        if($role=='1'){
             $users = Users::all();
             return view('admin.index')->with('users', $users);
         }else{
