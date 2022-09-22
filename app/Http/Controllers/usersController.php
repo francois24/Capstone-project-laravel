@@ -38,15 +38,15 @@ class usersController extends Controller
   
     public function update(Request $request, $id)
     {
-        $users = Users::find($id);
+        $user = Users::find($id);
         $input = $request->all();
-        $users->update($input);
-        return redirect('admin.index')->with('flash_message', 'Users Updated!');  
+        $user->update($input);
+        return redirect('admin')->with('flash_message', 'Users Updated!');  
     }
   
     public function destroy($id)
     {
         Users::destroy($id);
-        return redirect('admin.index')->with('flash_message', 'User deleted!');  
+        return redirect('admin')->with('flash_message', 'User deleted!');  
     }
 }

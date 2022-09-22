@@ -10,6 +10,6 @@ class Users extends Model
     use HasFactory;
     protected $table = 'users';
     protected $primarykey = 'id';
-    protected $fillable = ['name','email'];
+    protected $fillable = ['name','email','role'];
 }
 
