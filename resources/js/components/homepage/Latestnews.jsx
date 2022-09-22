@@ -69,7 +69,6 @@ export default class SimpleSlider1 extends Component {
           <LatestCard4/>
           </div>
         </Slider>
-        <div id='testimonials'></div>
       </div>
       </div>
     );
