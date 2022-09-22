@@ -24,6 +24,8 @@ Route::middleware([
 
 Route::get('redirects','App\Http\Controllers\HomeController@index');
 
+Route::resource('admin',App\Http\Controllers\usersController::class);
+
 Route::get('/', function () {
     return view('welcome');
 });
