@@ -47,9 +47,9 @@ Route::get('/news', function () {
     return view('news');
 });
 
-// Route::get('/contactus', function () {
-//     return view('contact');
-// });
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 Route::get('/newsford', function () {
     return view('newspage/newsford');
