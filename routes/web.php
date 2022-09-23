@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactUsFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,10 +25,15 @@ Route::middleware([
         return view('dbuser/usersbbb');
     })->name('dashboard');
 });
-
+//authenication of users
 Route::get('redirects','App\Http\Controllers\HomeController@index');
 
 Route::resource('admin',App\Http\Controllers\usersController::class);
+
+//contacts
+Route::get('/contact', [ContactUsFormController::class, 'createForm']);
+
+Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
 
 Route::get('/', function () {
     return view('welcome');
@@ -41,9 +47,9 @@ Route::get('/news', function () {
     return view('news');
 });
 
-Route::get('/contactus', function () {
-    return view('contact');
-});
+// Route::get('/contactus', function () {
+//     return view('contact');
+// });
 
 Route::get('/newsford', function () {
     return view('newspage/newsford');
@@ -86,3 +92,4 @@ Route::get('/subaruliberty', function () {
 Route::get('/xvrangesubaru', function () {
     return view('listcars/xvrangesubaru');
 });
+
