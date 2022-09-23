@@ -32,3 +32,18 @@ label {
     border-color: red;
     padding: .375rem .75rem;
 }
+
+
+.contactform1 {
+    background: #f3f3f3;
+    border: none;
+}
+
+.contactimg1 {
+    background: url('../images/Contact.png');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+

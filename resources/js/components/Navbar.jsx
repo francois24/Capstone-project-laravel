@@ -62,7 +62,7 @@ function Navbar() {
           </li>
 
           <li className='nav-item'>
-            <a href='/contactus'
+            <a href='/contact'
               className='nav-links'
             >
              CONTACT&#160;US
