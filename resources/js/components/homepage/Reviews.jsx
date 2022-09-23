@@ -1,7 +1,9 @@
+import { red } from "@mui/material/colors";
 import React, { Component } from "react";
 import Slider from "react-slick";
-import ComplexGrid from "./ReviewSlider";
+// import ComplexGrid from "./ReviewSlider";
 import '../../../css/Rentalfleets.css'
+import Revrev from './Revrev'
 
 
 export default class Reviews extends Component {
@@ -10,31 +12,29 @@ export default class Reviews extends Component {
       dots: true,
       infinite: true,
       speed: 500,
+      arrows: false,
       slidesToShow: 1,
-      slidesToScroll: 1,
-
+      slidesToScroll: 1
     };
     return (
-      <div className="revall">
-        <div className='fleetjd'>
-      <h3 className='fleetle'>CUSTOMER REVIEWS</h3>
-      <div className='emflt'><em >Luxury RentCar Rental Services</em></div>
-      
-      </div>
-        <Slider {...settings}>
+      <div className="revall"><br/>
+        <div className='fleetjd revem'>
+          <h3 className='fleetle'>CUSTOMER REVIEWS</h3>
+          <em className='emflt'>Luxury RentCar Rental Services</em>
+        </div >
+        <Slider className="revslck" {...settings}>
           <div>
-            <h3><ComplexGrid/></h3>
+            <h3><Revrev/></h3>
           </div>
           <div>
-            <h3><ComplexGrid/></h3>
+            <h3><Revrev/></h3>
           </div>
           <div>
-            <h3><ComplexGrid/></h3>
+            <h3><Revrev/></h3>
           </div>
           <div>
-            <h3><ComplexGrid/></h3>
+            <h3><Revrev/></h3>
           </div>
-          
         </Slider>
       </div>
     );
