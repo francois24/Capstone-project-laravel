@@ -5,14 +5,12 @@ import '../../css/Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-
   return (
     <>
-      <nav className='navbar sticky-top d-flex justify-content-between'>
+      <nav className='navbar d-flex justify-content-between'>
         <a href='/' onClick={closeMobileMenu}>
             <img className='navbar-logo' src={Logo} alt='Rental Car'/>
           

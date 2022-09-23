@@ -6,8 +6,10 @@
     align-items: center; */
     font-size: .9rem;
     z-index: 1;
+    position: sticky !important;
+    top: 0 !important;
   }
-  
+
   .navbar-logo {
     /* justify-self: start; */
     margin-left: 20px;

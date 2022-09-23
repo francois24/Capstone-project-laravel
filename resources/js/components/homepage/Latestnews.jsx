@@ -42,36 +42,39 @@ export default class SimpleSlider1 extends Component {
           }
         ]
     };
-    return (<div className="Latestall">
-      <Container class="m-5">
-      <Row>
-        <Col ><h1 class="text-center mt-5 h4"style={{fontSize:'2rem',fontWeight:'bolder'}}>LATEST NEWS</h1>
-        <p class="text-center hh4 mb-4"><em>Luxury RentCar Rental Services</em></p>
-        <p class="text-center p1">Amco laboris nisi ut aliquip xea comod consequt duis aute irure dolor reprehenderit</p>
-        <p class="text-center p1">voluptate velit cillum dolore fugiat lore ipsum dolor sit amet consectetur adipisicing</p>
-        <p class="text-center p1 mb-5">elit sed do eiusmod tempor incididunt</p>
-        </Col>
-      </Row>
-    </Container>
+    return (
+    <div className="Latestall">
+      <div className="degr">
+      </div>
+      <Container>
+        <Row>
+          <Col ><h1 class="text-center mt-5 h4"style={{fontSize:'2rem',fontWeight:'bolder'}}>LATEST NEWS</h1>
+          <p class="text-center hh4 mb-4"><em>Luxury RentCar Rental Services</em></p>
+          <p class="text-center p1">Amco laboris nisi ut aliquip xea comod consequt duis aute irure dolor reprehenderit</p>
+          <p class="text-center p1">voluptate velit cillum dolore fugiat lore ipsum dolor sit amet consectetur adipisicing</p>
+          <p class="text-center p1 mb-5">elit sed do eiusmod tempor incididunt</p>
+          </Col>
+        </Row>
+      </Container>
     
       <div className="sisliall1">
         <Slider {...settings}>
           <div>
-      <LatestCard1/>
+        <LatestCard1/>
           </div>
           <div>
         <LatestCard2/>
           </div>
           <div>
-      <LatestCard3/>
+        <LatestCard3/>
           </div>
           <div>
-          <LatestCard4/>
+        <LatestCard4/>
           </div>
         </Slider>
-        <div id='testimonials'></div>
       </div>
-      </div>
+      <br/><br/><br/><br/>
+    </div>
     );
   }
 }

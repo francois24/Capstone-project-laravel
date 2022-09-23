@@ -104,7 +104,7 @@
         @endif
           </ul>
         </div> --}}
-        <div class="nav justify-content-end" >
+        <div class="nav justify-content-end">
           @if (Route::has('login'))
           <li class="nav-item">
               @auth
@@ -120,7 +120,7 @@
       </div>
 
     </div>
-        <div id="navb"></div>
+        <div style="position: sticky; top: 0; z-index: 3;" id="navb"></div>
         {{-- @yield('bannerpage') --}}
         <div id="bann"></div>
         <div id="ourb"></div>

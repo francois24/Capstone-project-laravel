@@ -55,3 +55,47 @@
 .slick-prev {
     left: 25px;
 }
+
+.revem {
+    text-align: center;
+    line-height: 0.1;
+}
+
+.revslck {
+    margin-top: 40px;
+}
+
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+/* dots */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+    color: #bf0404;
+}
+
+.slick-dots li button:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 15px;
+    line-height:42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '\f192';
+    text-align: center;
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #bf0404;
+}
