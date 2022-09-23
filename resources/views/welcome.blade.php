@@ -84,44 +84,20 @@
         @vite(['resources/js/app.jsx'])
     </head>
     <body>
-      <div class="container-fluid text-bg-dark">
-        {{-- <div class="col-sm">
-          <ul class="nav justify-content-end">
-            @if (Route::has('login'))
-            <li class="nav-item">
-                @auth
-              <a href="{{ url('/dashboard') }}" class="nav-link" href="#">Dashboard</a>
-                @else
-            </li>
-            <li class="d-block nav-item">
-              <a class=" text-dark  nav-link"  href="{{ route('login') }}">Log in </a>
-            </li>
-
-                @if (Route::has('register'))
-                <a class=" text-dark nav-link"  href="{{ route('register') }}">Register </a>
-                @endif
-            @endauth
-        @endif
-          </ul>
-        </div> --}}
-        <div class="nav justify-content-end">
+        <div style="justify-content: end; display: flex; padding: 5px;" class="text-bg-dark">
           @if (Route::has('login'))
-          <li class="nav-item">
-              @auth
-            <a href="{{ url('/dashboard') }}" class="nav-link " href="#">Dashboard</a>
+            @auth
+              <a href="{{ url('/dashboard') }}" class="nav-link " href="#">{{ Auth::user()->name }}</a>
               @else
-              <button type="button" class="btn  me-3 mt-2 mb-2" style="background:#bf0404"><a class=" text-white"  href="{{ route('login') }}">Log in </a></button>
-                 @if (Route::has('register'))
-          {{-- <button type="button" class="btn btn-primary me-2 mt-2 mb-2" ><a class=" text-white"  href="{{ route('register') }}">Register </a></button> --}}
-          <button type="button" class="btn me-3 mt-2 mb-2"  style="background:#bf0404"><a class=" text-white"  href="{{ route('register') }}">Register </a></button>
-                @endif
-             @endauth
-             @endif
-      </div>
-
-    </div>
+              <button type="button" class="btn me-3" style="background:#bf0404"><a class=" text-white"  href="{{ route('login') }}">Log in </a></button>
+              @if (Route::has('register'))
+              <button type="button" class="btn me-3"  style="background:#bf0404"><a class=" text-white"  href="{{ route('register') }}">Register </a></button>
+              @endif
+            @endauth
+          @endif
+        </div>
+      
         <div style="position: sticky; top: 0; z-index: 3;" id="navb"></div>
-        {{-- @yield('bannerpage') --}}
         <div id="bann"></div>
         <div id="ourb"></div>
         <div id="rentalw"></div>

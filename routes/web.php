@@ -20,6 +20,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/dashboard', function () {
+        return view('dbuser/usersbbb');
+    })->name('dashboard');
 });
 
 Route::get('redirects','App\Http\Controllers\HomeController@index');

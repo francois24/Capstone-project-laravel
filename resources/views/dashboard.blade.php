@@ -92,26 +92,14 @@
     </head>
     <body>
       <x-app-layout>
-        <div id="navb"></div>
-        {{-- @yield('bannerpage') --}}
-        <div id="bann"></div>
-        <div id="ourb"></div>
-        <div id="rentalw"></div>
-        <div id="rentalf"></div>
-        <div id="carslick"></div>
-        <div id="rentalserv"></div>
-        <div id="review"></div>
-        <div id="latestn"></div>
+        @yield('usersbbb')
         <div id="footr"></div>
 
+      </x-app-layout>
         <!-- MDB -->
         <script
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
         ></script>
     </body>
-  </x-app-layout>
 </html>
-
-
-  
