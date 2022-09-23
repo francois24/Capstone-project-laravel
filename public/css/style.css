@@ -37,13 +37,57 @@ label {
 .contactform1 {
     background: #f3f3f3;
     border: none;
+    width: 100%;
 }
 
 .contactimg1 {
-    background: url('../images/Contact.png');
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.listcarbg {
+    background: url(https://autostar.templines.org/wp-content/uploads/2018/12/34664326.jpg);
+    height: 23vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 4rem;
+}
 
+.listoverlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.listcarbg div h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 30px;
+    color: #fff;
+}
+
+.contactflex {
+    display: flex;
+}
+
+@media screen and (max-width: 1320px) {
+    .contactflex {
+        display: block;
+    }
+
+    .contactform1 {
+        margin: auto;
+    }
+
+    .contactimg1 {
+        margin: auto;
+    }
+}

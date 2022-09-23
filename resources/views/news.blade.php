@@ -83,7 +83,7 @@
         @vite(['resources/js/app.jsx'])
     </head>
     <body>
-        <div id="navb"></div>
+        <div style="position: sticky; top: 0; z-index: 3;" id="navb"></div>
         <div id="newslist"></div>
         <div id="footr"></div>
     </body>
