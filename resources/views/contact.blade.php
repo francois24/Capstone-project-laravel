@@ -87,44 +87,22 @@
         @vite(['resources/js/app.jsx'])
     </head>
 <body>
-    <div id="navb"></div>
-
+    <div style="position: sticky; top: 0; z-index: 3;" id="navb"></div>
+    <div class='listcarbg'>
+        <div class='listoverlay'>
+            <h1>Contact Us</h1>
+        </div>
+    </div>
     
     <div class="container-fluid mt-5 ">
-        <h1 class="text-center">Contact Us</h1>
         <!-- Success message -->
         @if(Session::has('success'))
             <div class="alert alert-success">
                 {{Session::get('success')}}
             </div>
         @endif
-        {{-- <form action="" method="post" action="{{ route('contact.store') }}">
-            <!-- CROSS Site Request Forgery Protection -->
-            @csrf
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control" name="name" id="name">
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" class="form-control" name="email" id="email">
-            </div>
-            <div class="form-group">
-                <label>Phone</label>
-                <input type="text" class="form-control" name="phone" id="phone">
-            </div>
-            <div class="form-group">
-                <label>Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject">
-            </div>
-            <div class="form-group">
-                <label>Message</label>
-                <textarea class="form-control" name="message" id="message" rows="4"></textarea>
-            </div>
-            <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
-        </form> --}}
-            <div class="col-sm-10 m-auto">
-                <div class="row">
+            <div style="position: relative;" class="col-sm-10 m-auto">
+                <div class="contactflex">
                     <div class="col-md-6 mb-5 contactform1">
                         <form action="" method="post" action="{{ route('contact.store') }}"class="contactform1">
                             @csrf
@@ -179,63 +157,11 @@
                             <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
                         </form>
                     </div>
-                    <div class="col-md-6  mb-5 contactimg1">
-                      
+                    <div class="col-md-6 mb-5 contactimg1">
+                        <img style="width: 100%; height: 100%;" src="{{ asset('images/Contact.png') }}" alt='' />
                     </div>
                 </div>
             </div>
-        {{-- <form action="" method="post" action="{{ route('contact.store') }}">
-            @csrf
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
-                <!-- Error -->
-                @if ($errors->has('name'))
-                <div class="error">
-                    {{ $errors->first('name') }}
-                </div>
-                @endif
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" class="form-control {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email">
-                @if ($errors->has('email'))
-                <div class="error">
-                    {{ $errors->first('email') }}
-                </div>
-                @endif
-            </div>
-            <div class="form-group">
-                <label>Phone</label>
-                <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
-                @if ($errors->has('phone'))
-                <div class="error">
-                    {{ $errors->first('phone') }}
-                </div>
-                @endif
-            </div>
-            <div class="form-group">
-                <label>Subject</label>
-                <input type="text" class="form-control {{ $errors->has('subject') ? 'error' : '' }}" name="subject"
-                    id="subject">
-                @if ($errors->has('subject'))
-                <div class="error">
-                    {{ $errors->first('subject') }}
-                </div>
-                @endif
-            </div>
-            <div class="form-group">
-                <label>Message</label>
-                <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"
-                    rows="4"></textarea>
-                @if ($errors->has('message'))
-                <div class="error">
-                    {{ $errors->first('message') }}
-                </div>
-                @endif
-            </div>
-            <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
-        </form> --}}
     </div>
     <div id="footr"></div>
 </body>

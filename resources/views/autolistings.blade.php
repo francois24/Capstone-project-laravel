@@ -120,7 +120,7 @@
       </div>
 
     </div>
-        <div id="navb"></div>
+        <div style="position: sticky; top: 0; z-index: 3;" id="navb"></div>
         <div id="autolist"></div>
         
         <div id="footr"></div>
