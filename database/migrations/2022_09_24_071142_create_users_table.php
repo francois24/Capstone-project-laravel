@@ -17,7 +17,15 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('role')->default('users');
+        $table->string('role')->default('users');
+	    $table->date('date_pickup');
+	    $table->date('date_drop_off');
+            $table->string('first_name');
+	    $table->string('last_name');
+	    $table->string('address');
+	    $table->string('car_brand');
+	    $table->string('license_no');
+	    $table->string('Price');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
