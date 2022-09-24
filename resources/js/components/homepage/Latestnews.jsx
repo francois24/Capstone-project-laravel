@@ -6,6 +6,7 @@ import LatestCard3 from './LatestCard3'
 import LatestCard4 from './LatestCard4'
 import {Col, Row, Container} from 'react-bootstrap';
 import '../../../css/Latestnews.css'
+import 'animate.css';
 
 export default class SimpleSlider1 extends Component {
   render() {
@@ -48,7 +49,7 @@ export default class SimpleSlider1 extends Component {
       </div>
       <Container>
         <Row>
-          <Col ><h1 class="text-center mt-5 h4"style={{fontSize:'2rem',fontWeight:'bolder'}}>LATEST NEWS</h1>
+          <Col ><h1 class="text-center mt-5 h4 animate__animated animate__bounce"style={{fontSize:'2rem',fontWeight:'bolder'}}>LATEST NEWS</h1>
           <p class="text-center hh4 mb-4"><em>Luxury RentCar Rental Services</em></p>
           <p class="text-center p1">Amco laboris nisi ut aliquip xea comod consequt duis aute irure dolor reprehenderit</p>
           <p class="text-center p1">voluptate velit cillum dolore fugiat lore ipsum dolor sit amet consectetur adipisicing</p>

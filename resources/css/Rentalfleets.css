@@ -99,3 +99,13 @@
     opacity: .75;
     color: #bf0404;
 }
+
+
+.animate__animated.animate__bounce {
+    --animate-duration: 5s;
+  }
+  
+
+  .animate__animated.animate__bounce {
+    --animate-duration: 15s;
+  }

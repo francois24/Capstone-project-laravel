@@ -3,13 +3,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../../../css/Ourbenefits.css';
+import 'animate.css';
 
 
 const Ourbenefits = () => {
   return (
     <div className='ourb'>
       <Container className='text-center p-4'>
-        <h3 className='ourtle'>OUR BENEFITS</h3>
+        <h3 className='ourtle animate__animated animate__bounce'>OUR BENEFITS</h3>
         <em className='ourem'>Luxury RentCar Rental Services</em>
       <Row className='mt-5 justify-content-md-between'>
         <Col sm lg="3">

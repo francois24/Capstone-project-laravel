@@ -129,3 +129,9 @@
 .rsimg2 {
     position: absolute;
 }
+
+
+.animate__animated.animate__bounce {
+    --animate-duration: 20s;
+  }
+  

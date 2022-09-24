@@ -3,6 +3,7 @@ import Logo from '../../media/jusLogoImg.png';
 import '../../css/Navbar.css';
 
 
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
