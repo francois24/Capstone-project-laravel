@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import '../../../css/Rentalserv.css';
+import 'animate.css';
 
 function RentalServ() {
     return (
@@ -57,9 +58,9 @@ function RentalServ() {
                     </Col>
                     <Col lg={6}>
                         <div className='rentservimg'>
-                            <img className='rsimg1' src='https://autostar.templines.org/wp-content/uploads/2018/12/lay01.png'  alt=''/>
-                            <img className='rsimg2' src='https://autostar.templines.org/wp-content/uploads/2018/12/lay02.png' alt=''/>
-                            <img className='rsimg3' src='https://autostar.templines.org/wp-content/uploads/2018/12/lay03.png' alt=''/>
+                            <img className='rsimg1 animate__animated animate__bounce' src='https://autostar.templines.org/wp-content/uploads/2018/12/lay01.png'  alt=''/>
+                            <img className='rsimg2 animate__animated animate__bounce' src='https://autostar.templines.org/wp-content/uploads/2018/12/lay02.png' alt=''/>
+                            <img className='rsimg3 animate__animated animate__bounce' src='https://autostar.templines.org/wp-content/uploads/2018/12/lay03.png' alt=''/>
                         </div>
                     </Col>
                 </Row>

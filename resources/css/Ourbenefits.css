@@ -44,3 +44,8 @@
     font-size: 14px;
     line-height: 1.9;
 }
+
+
+.animate__animated.animate__bounce {
+    --animate-duration: 5s;
+  }

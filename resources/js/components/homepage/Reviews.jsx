@@ -4,6 +4,7 @@ import Slider from "react-slick";
 // import ComplexGrid from "./ReviewSlider";
 import '../../../css/Rentalfleets.css'
 import Revrev from './Revrev'
+import 'animate.css';
 
 
 export default class Reviews extends Component {
@@ -19,7 +20,7 @@ export default class Reviews extends Component {
     return (
       <div className="revall"><br/>
         <div className='fleetjd revem'>
-          <h3 className='fleetle'>CUSTOMER REVIEWS</h3>
+          <h3 className='fleetle animate__animated animate__bounce'>CUSTOMER REVIEWS</h3>
           <em className='emflt'>Luxury RentCar Rental Services</em>
         </div >
         <Slider className="revslck" {...settings}>
