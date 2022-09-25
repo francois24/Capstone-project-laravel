@@ -45,6 +45,10 @@
                             <label for="description" class="block font-medium text-sm text-gray-700">Drop Off Date</label>
                              <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
                             value="{{ old('role', $users->drop_off_date) }}" />
+                            <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Car Brand</label>
+                             <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('role', $users->car_brand) }}" />
 
                             {{-- @error('description')
                                 <p class="text-sm text-red-600">{{ $message }}</p>
