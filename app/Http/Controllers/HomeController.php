@@ -12,11 +12,11 @@ class HomeController extends Controller
 
         if($role=='admin'){
            
-            $users = array("contacts" => DB::table('contacts')->orderBy('created_at','desc')->paginate(10));
-            return view ('admin.index',$users);
+            // $users = array("contacts" => DB::table('contacts')->orderBy('created_at','desc')->paginate(10));
+            // return view ('admin.index',$users);
 
-             // $users =Contact::all();
-            // return view('admin.index')->with('users', $users);
+             $users =Contact::all();
+            return view('admin.index')->with('users', $users);
 
         }else{
             return view('dashboard');
