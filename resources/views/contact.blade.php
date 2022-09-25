@@ -90,7 +90,7 @@
     <div style="justify-content: end; display: flex; padding: 5px;" class="text-bg-dark">
         @if (Route::has('login'))
           @auth
-            <a href="{{ url('/dashboard') }}" class="nav-link " href="#">{{ Auth::user()->name }}</a>
+            <a href="{{ url('/redirects') }}" class="nav-link " href="#">{{ Auth::user()->name }}</a>
             @else
             <button type="button" class="btn me-3" style="background:#bf0404"><a class=" text-white"  href="{{ route('login') }}">Log in </a></button>
             @if (Route::has('register'))
