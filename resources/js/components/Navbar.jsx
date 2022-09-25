@@ -66,7 +66,7 @@ function Navbar() {
             <a href='/contact'
               className='nav-links'
             >
-             CONTACT&#160;US
+             RENT&#160;NOW
             </a>
           </li>
 
