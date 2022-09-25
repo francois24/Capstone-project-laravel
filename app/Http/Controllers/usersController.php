@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 use App\Models\Users;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class usersController extends Controller
 {
     public function index()
     {
-        $users = Users::all();
+        $users = contact::all();
         return view ('admin.index')->with('users', $users);
     }
     
@@ -26,19 +27,19 @@ class usersController extends Controller
     
     public function show($id)
     {
-        $users = Users::find($id);
+        $users = Contact::find($id);
         return view('admin.show')->with('users', $users);
     }
     
     public function edit($id)
     {
-        $users = Users::find($id);
+        $users = Contact::find($id);
         return view('admin.edit')->with('users', $users);
     }
   
     public function update(Request $request, $id)
     {
-        $user = Users::find($id);
+        $user = Contact::find($id);
         $input = $request->all();
         $user->update($input);
         return redirect('admin')->with('flash_message', 'Users Updated!');  
@@ -46,7 +47,7 @@ class usersController extends Controller
   
     public function destroy($id)
     {
-        Users::destroy($id);
+        Contact::destroy($id);
         return redirect('admin')->with('flash_message', 'User deleted!');  
     }
 }

@@ -90,7 +90,7 @@
     <div style="position: sticky; top: 0; z-index: 3;" id="navb"></div>
     <div class='listcarbg'>
         <div class='listoverlay'>
-            <h1>Contact Us</h1>
+            <h1>Register</h1>
         </div>
     </div>
     
@@ -106,16 +106,64 @@
                     <div class="col-md-6 mb-5 contactform1">
                         <form action="" method="post" action="{{ route('contact.store') }}"class="contactform1">
                             @csrf
+
                             <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
+                                <label>Date Pickup</label>
+                                <input type="date" class="form-control {{ $errors->has('date_pickup') ? 'error' : '' }}" name="date_pickup" id="name">
                                 <!-- Error -->
-                                @if ($errors->has('name'))
+                                @if ($errors->has('date_pickup'))
                                 <div class="error">
-                                    {{ $errors->first('name') }}
+                                    {{ $errors->first('date_pickup') }}
                                 </div>
                                 @endif
                             </div>
+
+                            <div class="form-group">
+                                <label>Drop Off Date</label>
+                                <input type="date" class="form-control {{ $errors->has('drop_off_date') ? 'error' : '' }}" name="drop_off_date" id="name">
+                                <!-- Error -->
+                                @if ($errors->has('drop_off_date'))
+                                <div class="error">
+                                    {{ $errors->first('drop_off_date') }}
+                                </div>
+                                @endif
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" class="form-control {{ $errors->has('first_name') ? 'error' : '' }}" name="first_name" id="name">
+                                <!-- Error -->
+                                @if ($errors->has('first_name'))
+                                <div class="error">
+                                    {{ $errors->first('first_name') }}
+                                </div>
+                                @endif
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control {{ $errors->has('last_name') ? 'error' : '' }}" name="last_name" id="name">
+                                <!-- Error -->
+                                @if ($errors->has('last_name'))
+                                <div class="error">
+                                    {{ $errors->first('last_name') }}
+                                </div>
+                                @endif
+                            </div>
+
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="name">
+                                <!-- Error -->
+                                @if ($errors->has('phone'))
+                                <div class="error">
+                                    {{ $errors->first('phone') }}
+                                </div>
+                                @endif
+                            </div>
+
                             <div class="form-group">
                                 <label>Email</label>
                                 <input type="email" class="form-control {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email">
@@ -125,35 +173,47 @@
                                 </div>
                                 @endif
                             </div>
+
                             <div class="form-group">
-                                <label>Phone</label>
-                                <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
-                                @if ($errors->has('phone'))
+                                <label>Address</label>
+                                <input type="text" class="form-control {{ $errors->has('address') ? 'error' : '' }}" name="address" id="name">
+                                <!-- Error -->
+                                @if ($errors->has('address'))
                                 <div class="error">
-                                    {{ $errors->first('phone') }}
+                                    {{ $errors->first('address') }}
                                 </div>
                                 @endif
                             </div>
+
                             <div class="form-group">
-                                <label>Subject</label>
-                                <input type="text" class="form-control {{ $errors->has('subject') ? 'error' : '' }}" name="subject"
-                                    id="subject">
-                                @if ($errors->has('subject'))
+                                <label>License number</label>
+                                <input type="text" class="form-control {{ $errors->has('license_no') ? 'error' : '' }}" name="license_no" id="phone">
+                                @if ($errors->has('license_no'))
                                 <div class="error">
-                                    {{ $errors->first('subject') }}
+                                    {{ $errors->first('license_no') }}
                                 </div>
                                 @endif
                             </div>
+
                             <div class="form-group">
-                                <label>Message</label>
-                                <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"
-                                    rows="4"></textarea>
-                                @if ($errors->has('message'))
+                                <label>Car Brand</label>
+                                <select name="car_brand" id="name">
+                                    <option value="Forester Subaru">Forester Subaru</option>
+                                    <option value="Mirage Range">Mirage Range</option>
+                                    <option value="Mitsubishi Lancer">Mitsubishi Lancer</option>
+                                    <option value="Pajero Range">Pajero Range</option>
+                                    <option value="Subaru Liberty">Subaru Liberty</option>
+                                    <option value="Subaru Liberty">Subaru Liberty</option>
+                                    
+                                </select>
+                                {{-- <input type="text" class="form-control {{ $errors->has('license_no') ? 'error' : '' }}" name="license_no" id="phone"> --}}
+                                @if ($errors->has('license_no'))
                                 <div class="error">
-                                    {{ $errors->first('message') }}
+                                    {{ $errors->first('license_no') }}
                                 </div>
                                 @endif
                             </div>
+
                             <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
                         </form>
                     </div>

@@ -7,10 +7,11 @@
 
     <div>
     <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
-        <div class="block mb-8">
+        {{-- <div class="block mb-8">
             <a href="{{ route('admin.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Inquiries</a>
-        </div>
-
+        </div> --}}
+        <p class="text-4xl ...">Customers Info</p>
+        <br>
         <div class="flex flex-col">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -22,16 +23,19 @@
                                     ID
                                 </th>
                                 <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Name
+                                    First Name
+                                </th>
+                                <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Last Name
                                 </th>
                                 <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                     Email
                                 </th>
                                 <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Role
+                                    Drop off date
                                 </th>
                                 <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Date Created
+                                    Date Pickup
                                 </th>
                                 <th scope="col" width="200" class="px-6 py-3 bg-gray-50">
                                     Action
@@ -46,7 +50,11 @@
                                     </td>
 
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                        {{ $users->name }}
+                                        {{ $users->first_name }}
+                                    </td>
+
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        {{ $users->last_name }}
                                     </td>
 
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
@@ -54,11 +62,11 @@
                                     </td>
                             
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                        {{ $users->role }}
+                                        {{ $users->drop_off_date }}
                                     </td>
 
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                        {{ $users->created_at }}
+                                        {{ $users->date_pickup }}
                                     </td>
 
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">

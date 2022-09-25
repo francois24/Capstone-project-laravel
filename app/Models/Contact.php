@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     use HasFactory;
-    public $fillable = ['name', 'email', 'phone', 'subject', 'message'];
+    
+    public $fillable = ['date_pickup','drop_off_date','first_name','last_name','phone', 'email','address', 'license_no','car_brand'];
 }

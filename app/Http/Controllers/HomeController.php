@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Users;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
@@ -10,7 +11,7 @@ class HomeController extends Controller
         $role = Auth::user()->role;
 
         if($role=='admin'){
-            $users = Users::all();
+            $users =Contact::all();
             return view('admin.index')->with('users', $users);
         }else{
             return view('dashboard');
