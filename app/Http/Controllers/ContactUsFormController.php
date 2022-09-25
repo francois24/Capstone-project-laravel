@@ -30,9 +30,16 @@ class ContactUsFormController extends Controller {
         Contact::create($request->all());
         //  Send mail to admin
         \Mail::send('mail', array(
-            'first_name' => $request->get('name'),
+            'first_name' => $request->get('first_name'),
+            'last_name' => $request->get('last_name'),
+            'date_pickup' => $request->get('date_pickup'),
+            'drop_off_date' => $request->get('drop_off_date'),
             'email' => $request->get('email'),
             'phone' => $request->get('phone'),
+            'address' => $request->get('address'),
+            'license_no' => $request->get('license_no'),
+            'car_brand' => $request->get('car_brand'),
+            
             // 'subject' => $request->get('subject'),
             // 'user_query' => $request->get('message'),
         ), function($message) use ($request){
