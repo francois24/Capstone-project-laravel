@@ -12,24 +12,32 @@ class ContactUsFormController extends Controller {
     public function ContactUsForm(Request $request) {
         // Form validation
         $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required|email',
+            'date_pickup' => 'required',
+            'drop_off_date' => 'required',
+            'first_name' => 'required',
+            'last_name' => 'required',
             'phone' => 'required',
-            'subject'=>'required',
-            'message' => 'required'
+            'email' => 'required|email',
+            'address' => 'required',
+            'license_no' => 'required',
+            'car_brand' => 'required',
+            // 'email' => 'required|email',
+            // 'phone' => 'required',
+            // 'subject'=>'required',
+            // 'message' => 'required'
          ]);
         //  Store data in database
         Contact::create($request->all());
         //  Send mail to admin
         \Mail::send('mail', array(
-            'name' => $request->get('name'),
+            'first_name' => $request->get('name'),
             'email' => $request->get('email'),
             'phone' => $request->get('phone'),
-            'subject' => $request->get('subject'),
-            'user_query' => $request->get('message'),
+            // 'subject' => $request->get('subject'),
+            // 'user_query' => $request->get('message'),
         ), function($message) use ($request){
             $message->from($request->email);
-            $message->to('rentcar@gmail.com', 'Admin')->subject($request->get('subject'));
+            $message->to('rentcar@gmail.com', 'Admin')->subject($request->get('email'));
         });
         return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
     }

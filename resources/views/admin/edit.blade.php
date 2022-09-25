@@ -20,21 +20,35 @@
                     @method('PUT')
                     <div class="shadow overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 bg-white sm:p-6">
-                            <label for="description" class="block font-medium text-sm text-gray-700">Name</label>
+                            <label for="description" class="block font-medium text-sm text-gray-700">First Name</label>
                             <input type="text" name="name" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                                   value="{{ old('name', $users->name) }}" />
-                            
-                            <label for="description" class="block font-medium text-sm text-gray-700">Email</label>
+                                   value="{{ old('name', $users->first_name) }}" />
+                            <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Last Name</label>
                             <input type="text" name="email" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                                          value="{{ old('email', $users->email) }}" />
-
-                            <label for="description" class="block font-medium text-sm text-gray-700">Role</label>
+                                          value="{{ old('email', $users->last_name) }}" />
+                            <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Email</label>
                             <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                                                 value="{{ old('role', $users->role) }}" />
+                            value="{{ old('role', $users->email) }}" />
 
-                            @error('description')
+                            <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Phone</label>
+                            <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('role', $users->phone) }}" />
+
+                             <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Pick Up Date</label>
+                            <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('role', $users->date_pickup) }}" />
+                            <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Drop Off Date</label>
+                             <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('role', $users->drop_off_date) }}" />
+
+                            {{-- @error('description')
                                 <p class="text-sm text-red-600">{{ $message }}</p>
-                            @enderror
+                            @enderror --}}
                         </div>
 
                         <div class="flex items-center justify-end px-4 py-3 bg-gray-50 text-right sm:px-6">
