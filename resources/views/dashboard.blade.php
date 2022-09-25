@@ -92,7 +92,8 @@
     </head>
     <body>
       <x-app-layout>
-        @yield('usersbbb')
+        {{-- @yield('usersbbb') --}}\
+        <div id="carslick"></div>
         <div id="footr"></div>
 
       </x-app-layout>

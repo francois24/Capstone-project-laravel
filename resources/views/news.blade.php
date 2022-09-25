@@ -83,6 +83,18 @@
         @vite(['resources/js/app.jsx'])
     </head>
     <body>
+      <div style="justify-content: end; display: flex; padding: 5px;" class="text-bg-dark">
+        @if (Route::has('login'))
+          @auth
+            <a href="{{ url('/dashboard') }}" class="nav-link " href="#">{{ Auth::user()->name }}</a>
+            @else
+            <button type="button" class="btn me-3" style="background:#bf0404"><a class=" text-white"  href="{{ route('login') }}">Log in </a></button>
+            @if (Route::has('register'))
+            <button type="button" class="btn me-3"  style="background:#bf0404"><a class=" text-white"  href="{{ route('register') }}">Register </a></button>
+            @endif
+          @endauth
+        @endif
+      </div>
         <div style="position: sticky; top: 0; z-index: 3;" id="navb"></div>
         <div id="newslist"></div>
         <div id="footr"></div>

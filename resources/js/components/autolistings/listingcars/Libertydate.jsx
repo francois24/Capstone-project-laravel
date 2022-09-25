@@ -74,7 +74,7 @@ export default function Libertydate() {
             </FormControl>
 
             <div>
-              <a href='/#' className='dpickerbtn'>RENT&#160;NOW</a>
+              <a href='/contact' className='dpickerbtn'>RENT&#160;NOW</a>
             </div>
         
         </Stack>
