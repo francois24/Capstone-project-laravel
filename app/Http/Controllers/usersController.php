@@ -11,7 +11,9 @@ class usersController extends Controller
     {
         $users = contact::all();
         return view ('admin.index')->with('users', $users);
-    }
+    // $users = array("contact" => DB::table('contacts')->orderBy('created_at','desc')->paginate(10));
+    //         return view ('admin.index',$users);
+     }
     
     public function create()
     {

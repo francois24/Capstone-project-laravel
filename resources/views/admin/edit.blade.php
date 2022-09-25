@@ -21,34 +21,34 @@
                     <div class="shadow overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 bg-white sm:p-6">
                             <label for="description" class="block font-medium text-sm text-gray-700">First Name</label>
-                            <input type="text" name="name" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                                   value="{{ old('name', $users->first_name) }}" />
+                            <input type="text" name="first_name" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                                   value="{{ old('first_name', $users->first_name) }}" />
                             <br>
                             <label for="description" class="block font-medium text-sm text-gray-700">Last Name</label>
-                            <input type="text" name="email" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                                          value="{{ old('email', $users->last_name) }}" />
+                            <input type="text" name="last_name" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                                          value="{{ old('last_name', $users->last_name) }}" />
                             <br>
                             <label for="description" class="block font-medium text-sm text-gray-700">Email</label>
-                            <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                            value="{{ old('role', $users->email) }}" />
+                            <input type="text" name="email" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('email', $users->email) }}" />
 
                             <br>
                             <label for="description" class="block font-medium text-sm text-gray-700">Phone</label>
-                            <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                            value="{{ old('role', $users->phone) }}" />
+                            <input type="text" name="phone" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('phone', $users->phone) }}" />
 
                              <br>
                             <label for="description" class="block font-medium text-sm text-gray-700">Pick Up Date</label>
-                            <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                            value="{{ old('role', $users->date_pickup) }}" />
+                            <input type="text" name="date_pickup" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('date_pickup', $users->date_pickup) }}" />
                             <br>
                             <label for="description" class="block font-medium text-sm text-gray-700">Drop Off Date</label>
-                             <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                            value="{{ old('role', $users->drop_off_date) }}" />
+                             <input type="text" name="drop_off_date" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('drop_off_date', $users->drop_off_date) }}" />
                             <br>
                             <label for="description" class="block font-medium text-sm text-gray-700">Car Brand</label>
-                             <input type="text" name="role" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                            value="{{ old('role', $users->car_brand) }}" />
+                             <input type="text" name="car_brand" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('car_brand', $users->car_brand) }}" />
 
                             {{-- @error('description')
                                 <p class="text-sm text-red-600">{{ $message }}</p>

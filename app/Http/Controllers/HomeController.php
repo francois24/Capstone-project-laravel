@@ -11,29 +11,16 @@ class HomeController extends Controller
         $role = Auth::user()->role;
 
         if($role=='admin'){
-            $users =Contact::all();
-            return view('admin.index')->with('users', $users);
+           
+            $users = array("contacts" => DB::table('contacts')->orderBy('created_at','desc')->paginate(10));
+            return view ('admin.index',$users);
+
+             // $users =Contact::all();
+            // return view('admin.index')->with('users', $users);
+
         }else{
             return view('dashboard');
         }
     }
-
-    // public function create()
-    // {
-    //     return view('admin.create');
-    // }
-  
-    // public function store(Request $request)
-    // {
-    //     $input = $request->all();
-    //     users::create($input);
-    //     return redirect('users')->with('flash_message', 'Tasks Addedd!');  
-    // }
-
-    // public function show($id)
-    // {
-    //     $users = Users::find($id);
-    //     return view('admin.show')->with('Users', $users);
-    // }
     
 }
