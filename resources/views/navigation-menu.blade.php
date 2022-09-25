@@ -19,7 +19,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10  sm:flex">
-                    <x-jet-nav-link style="color: #ffffff; border: none;" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    <x-jet-nav-link style="color: #ffffff; border: none;"  :active="request()->routeIs('dashboard')">
                         <span style="font-size: 19px;">{{ __('Welcome!')}}<span>
                         <span style="font-weight: 700; font-size: 19px;">{{ Auth::user()->name }}</span>
 

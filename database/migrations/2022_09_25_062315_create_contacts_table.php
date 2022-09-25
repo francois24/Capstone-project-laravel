@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('contacts', function (Blueprint $table) {
+
             $table->id();
             $table->date('date_pickup');
             $table->date('drop_off_date');
