@@ -49,7 +49,10 @@
                             <label for="description" class="block font-medium text-sm text-gray-700">Car Brand</label>
                              <input type="text" name="car_brand" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
                             value="{{ old('car_brand', $users->car_brand) }}" />
-
+                            <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">License Number</label>
+                             <input type="text" name="license_no" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('car_brand', $users->license_no) }}" />
                             {{-- @error('description')
                                 <p class="text-sm text-red-600">{{ $message }}</p>
                             @enderror --}}

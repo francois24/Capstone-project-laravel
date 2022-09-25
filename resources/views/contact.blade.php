@@ -219,9 +219,9 @@
                                     
                                 </select>
                                 {{-- <input type="text" class="form-control {{ $errors->has('license_no') ? 'error' : '' }}" name="license_no" id="phone"> --}}
-                                @if ($errors->has('license_no'))
+                                @if ($errors->has('car_brand'))
                                 <div class="error">
-                                    {{ $errors->first('license_no') }}
+                                    {{ $errors->first('car_brand') }}
                                 </div>
                                 @endif
                             </div>

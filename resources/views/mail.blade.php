@@ -8,7 +8,7 @@ First Name: {{ $first_name }} <br>
 Last Name: {{ $last_name }} <br>
 Email: {{ $email }} <br>
 Phone: {{ $phone }} <br>
-Date Pick up: {{ $phone }} <br>
+Date Pick up: {{ $date_pickup }} <br>
 Date drop off: {{ $drop_off_date }} <br>
 Address: {{ $address }} <br>
 License Number: {{ $license_no }} <br>
