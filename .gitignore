@@ -18,3 +18,5 @@ node_modules
 vendor
 desktop.ini
 .vscode
+database
+.DS_Store
