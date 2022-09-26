@@ -11,11 +11,9 @@ class HomeController extends Controller
         $role = Auth::user()->role;
 
         if($role=='admin'){
-           
-            // $users = array("contacts" => DB::table('contacts')->orderBy('created_at','desc')->paginate(10));
-            // return view ('admin.index',$users);
 
-             $users =Contact::all();
+             $users =Contact::orderBy('updated_at','DESC')
+             ->get();
             return view('admin.index')->with('users', $users);
 
         }else{

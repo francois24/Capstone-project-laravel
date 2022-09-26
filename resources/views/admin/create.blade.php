@@ -10,17 +10,92 @@
             <div class="block mb-8">
                 <a href="{{ route('admin.index') }}" class="bg-gray-200 hover:bg-gray-300 text-black font-bold py-2 px-4 rounded">Back to list</a>
             </div>
+
             <div class="mt-5 md:mt-0 md:col-span-2">
                 <form method="post" action="{{ route('admin.store') }}">
                     @csrf
                     <div class="shadow overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 bg-white sm:p-6">
-                            <label for="description" class="block font-medium text-sm text-gray-700">Name</label>
-                            <input type="text" name="name" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                            value="{{ old('name', '') }}" />
+                            
+
+                            <label for="description" class="block font-medium text-sm text-gray-700">Date Pick up</label>
+                            <input type="date" name="date_pickup" id="description" required class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('date_pickup', '') }}" />
+                            @error('date_pickup')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                                   <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Drop off Date</label>
+                            <input type="date" name="drop_off_date" id="description" required class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('drop_off_date', '') }}" />
+                            @error('drop_off_date')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
                                    <br>
 
+                            <label for="description" class="block font-medium text-sm text-gray-700">First Name</label>
+                            <input type="text" name="first_name" id="description" required class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('first_name', '') }}" />
+                            @error('first_name')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                                   <br>
+                            
+                            <label for="description" class="block font-medium text-sm text-gray-700">Last Name</label>
+                            <input type="text" name="last_name" id="description" required class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('last_name', '') }}" />
+                            @error('last_name')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                                   <br>
+                            
+                            <label for="description" class="block font-medium text-sm text-gray-700">Phone Number</label>
+                            <input type="text" name="phone" id="description"  required class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('phone', '') }}" />
+                            @error('phone')
+                            <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                                    <br>
                             <label for="description" class="block font-medium text-sm text-gray-700">Email</label>
+                            <input type="text" name="email" id="description"  required class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('email', '') }}" />
+                            @error('email')
+                            <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                                        <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Address</label>
+                            <input type="text" name="address" id="description" required class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('address', '') }}" />
+                            @error('address')
+                            <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                                        <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">License Number</label>
+                            <input type="text" name="license_no" id="description" required class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('license_no', '') }}" />
+                            @error('license_no')
+                            <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                                        <br>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Car brand</label>
+                            {{-- <input type="text" name="car_brand" id="description" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                            value="{{ old('car_brand', '') }}" />
+                            @error('car_brand')
+                            <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror --}}
+
+                            <select name="car_brand" id="name">
+                                <option value="Forester Subaru">Forester Subaru</option>
+                                <option value="Mirage Range">Mirage Range</option>
+                                <option value="Mitsubishi Lancer">Mitsubishi Lancer</option>
+                                <option value="Pajero Range">Pajero Range</option>
+                                <option value="Subaru Liberty">Subaru Liberty</option>
+                                <option value="Subaru Liberty">Subaru Liberty</option>
+                                
+                            </select>
+                                        <br>
+
+                            {{-- <label for="description" class="block font-medium text-sm text-gray-700">Email</label>
                             <input type="text" name="email" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
                             value="{{ old('email', '') }}" />
                                     <br>
@@ -35,7 +110,7 @@
 
                             @error('description')
                                 <p class="text-sm text-red-600">{{ $message }}</p>
-                            @enderror
+                            @enderror --}}
                         </div>
 
                         {{-- <form method="POST" action="{{ route('register') }}">

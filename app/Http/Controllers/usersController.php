@@ -9,10 +9,9 @@ class usersController extends Controller
 {
     public function index()
     {
-        $users = contact::all();
-        return view ('admin.index')->with('users', $users);
-    // $users = array("contact" => DB::table('contacts')->orderBy('created_at','desc')->paginate(10));
-    //         return view ('admin.index',$users);
+        $users =Contact::orderBy('created_at','DESC')
+        ->get();
+        return view('admin.index')->with('users', $users);
      }
     
     public function create()
@@ -23,8 +22,8 @@ class usersController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        users::create($input);
-        return redirect('users')->with('flash_message', 'Users Added!');  
+        Contact::create($input);
+        return redirect('admin')->with('flash_message', 'Users Added!');  
     }
     
     public function show($id)
