@@ -12,7 +12,7 @@ class HomeController extends Controller
 
         if($role=='admin'){
 
-             $users =Contact::orderBy('updated_at','DESC')
+             $users =Contact::orderBy('created_at','DESC')
              ->get();
             return view('admin.index')->with('users', $users);
 
