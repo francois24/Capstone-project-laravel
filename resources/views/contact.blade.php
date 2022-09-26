@@ -209,7 +209,7 @@
 
                             <div class="form-group">
                                 <label>Car Brand</label>
-                                <select name="car_brand" id="name">
+                                <select name="car_brand" id="name" class="w-100 p-2 shadow-2" style="border-radius: 0.25rem;border:1px solid #bdbdbd">
                                     <option value="Forester Subaru">Forester Subaru</option>
                                     <option value="Mirage Range">Mirage Range</option>
                                     <option value="Mitsubishi Lancer">Mitsubishi Lancer</option>
