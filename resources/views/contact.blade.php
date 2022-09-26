@@ -215,7 +215,7 @@
                                     <option value="Mitsubishi Lancer">Mitsubishi Lancer</option>
                                     <option value="Pajero Range">Pajero Range</option>
                                     <option value="Subaru Liberty">Subaru Liberty</option>
-                                    <option value="Subaru Liberty">Subaru Liberty</option>
+
                                     
                                 </select>
                                 {{-- <input type="text" class="form-control {{ $errors->has('license_no') ? 'error' : '' }}" name="license_no" id="phone"> --}}
